@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Boutique de Paris</title>
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-stone-50 text-stone-900 font-sans">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="text-2xl font-serif tracking-wider font-bold">MAISON</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-stone-700">
+                <a href="index.html" class="hover:text-black transition-colors">Inicio</a>
+                <a href="catalogo.html" class="hover:text-black transition-colors">Catálogo</a>
+                <a href="#" class="hover:text-black transition-colors">Hombre</a>
+                <a href="#" class="hover:text-black transition-colors">Mujer</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="carrito.html" class="text-sm font-medium hover:underline">Volver al Carrito</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT - CHECKOUT EN 3 PASOS -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h1 class="text-3xl font-serif mb-8 text-center">Finalizar Compra</h1>
+
+        <form class="space-y-12">
+            
+            <!-- PASO 1: Datos Personales -->
+            <section class="bg-white p-8 rounded-lg border border-stone-200 shadow-sm">
+                <h2 class="text-xl font-serif font-medium mb-6 flex items-center">
+                    <span class="bg-black text-white w-7 h-7 rounded-full inline-flex items-center justify-center text-sm mr-3">1</span>
+                    Datos Personales
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-stone-700 mb-2">Nombre</label>
+                        <input type="text" placeholder="Jean" class="w-full border border-stone-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-black">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-stone-700 mb-2">Apellido</label>
+                        <input type="text" placeholder="Dupont" class="w-full border border-stone-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-black">
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label class="block text-sm font-medium text-stone-700 mb-2">Correo Electrónico</label>
+                        <input type="email" placeholder="jean.dupont@example.com" class="w-full border border-stone-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-black">
+                    </div>
+                </div>
+            </section>
+
+            <!-- PASO 2: Dirección de Entrega -->
+            <section class="bg-white p-8 rounded-lg border border-stone-200 shadow-sm">
+                <h2 class="text-xl font-serif font-medium mb-6 flex items-center">
+                    <span class="bg-black text-white w-7 h-7 rounded-full inline-flex items-center justify-center text-sm mr-3">2</span>
+                    Dirección de Entrega
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="sm:col-span-2">
+                        <label class="block text-sm font-medium text-stone-700 mb-2">Calle y Número</label>
+                        <input type="text" placeholder="Avenue des Champs-Élysées #75" class="w-full border border-stone-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-black">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-stone-700 mb-2">Ciudad</label>
+                        <input type="text" placeholder="París" class="w-full border border-stone-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-black">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-stone-700 mb-2">Código Postal</label>
+                        <input type="text" placeholder="75008" class="w-full border border-stone-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-black">
+                    </div>
+                </div>
+            </section>
+
+            <!-- PASO 3: Pago con Tarjeta -->
+            <section class="bg-white p-8 rounded-lg border border-stone-200 shadow-sm">
+                <h2 class="text-xl font-serif font-medium mb-6 flex items-center">
+                    <span class="bg-black text-white w-7 h-7 rounded-full inline-flex items-center justify-center text-sm mr-3">3</span>
+                    Pago con Tarjeta
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="sm:col-span-2">
+                        <label class="block text-sm font-medium text-stone-700 mb-2">Nombre en la Tarjeta</label>
+                        <input type="text" placeholder="JEAN DUPONT" class="w-full border border-stone-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-black">
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label class="block text-sm font-medium text-stone-700 mb-2">Número de Tarjeta</label>
+                        <input type="text" placeholder="4532 •••• •••• 8890" class="w-full border border-stone-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-black">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-stone-700 mb-2">Fecha de Expiración</label>
+                        <input type="text" placeholder="MM/AA" class="w-full border border-stone-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-black">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-stone-700 mb-2">CVV</label>
+                        <input type="password" placeholder="123" class="w-full border border-stone-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-black">
+                    </div>
+                </div>
+            </section>
+
+            <!-- BOTÓN FINAL -->
+            <button type="submit" class="w-full bg-black text-white py-4 rounded-full font-medium hover:bg-stone-800 transition text-center text-lg shadow-md">
+                Confirmar y Pagar $6,310.40
+            </button>
+
+        </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-900 text-stone-400 py-12 border-t border-stone-800 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-xs text-center">
+            &copy; 2026 MAISON. Todos los derechos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>

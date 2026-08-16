@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabardina Clásica París - Boutique de Paris</title>
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-stone-50 text-stone-900 font-sans">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="text-2xl font-serif tracking-wider font-bold">MAISON</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-stone-700">
+                <a href="index.html" class="hover:text-black transition-colors">Inicio</a>
+                <a href="catalogo.html" class="hover:text-black transition-colors">Catálogo</a>
+                <a href="#" class="hover:text-black transition-colors">Hombre</a>
+                <a href="#" class="hover:text-black transition-colors">Mujer</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-sm font-medium hover:underline">Mi Cuenta</a>
+                <a href="#" class="bg-black text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-stone-800 transition">Carrito (0)</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT - VISTA DE PRODUCTO EN DOS COLUMNAS -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            
+            <!-- COLUMNA IZQUIERDA: Imagen principal del producto -->
+            <div class="bg-stone-200 aspect-3/4 rounded-lg overflow-hidden border border-stone-200">
+                <!-- Aquí irá la foto grande del producto -->
+            </div>
+
+            <!-- COLUMNA DERECHA: Información principal y compra -->
+            <div class="space-y-6">
+                <div>
+                    <span class="text-xs uppercase tracking-widest text-stone-500">Ref. #PARIS-001</span>
+                    <h1 class="text-3xl sm:text-4xl font-serif mt-2">Gabardina Clásica París</h1>
+                    <p class="text-2xl font-medium text-stone-800 mt-4">$2,450.00</p>
+                </div>
+
+                <p class="text-stone-600 text-sm leading-relaxed">
+                    Confeccionada en los talleres de alta costura de París, esta gabardina combina una silueta atemporal con una impermeabilidad superior para la temporada moderna.
+                </p>
+
+                <!-- Selector de Talla -->
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Selecciona la Talla</label>
+                    <div class="flex space-x-3">
+                        <button class="border border-stone-300 px-4 py-2 rounded text-sm hover:border-black transition">XS</button>
+                        <button class="border border-stone-300 px-4 py-2 rounded text-sm hover:border-black transition">S</button>
+                        <button class="border border-stone-300 px-4 py-2 rounded text-sm hover:border-black transition">M</button>
+                        <button class="border border-stone-300 px-4 py-2 rounded text-sm hover:border-black transition">L</button>
+                    </div>
+                </div>
+
+                <!-- Selector de Cantidad y Botón de Compra -->
+                <div class="flex items-center space-x-4 pt-4 border-t border-stone-200">
+                    <div class="flex items-center border border-stone-300 rounded px-3 py-2">
+                        <span class="text-sm text-stone-600 mr-4">Cant:</span>
+                        <span class="font-medium">1</span>
+                    </div>
+                    <button class="flex-1 bg-black text-white py-3 rounded-full font-medium hover:bg-stone-800 transition text-center">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN DE DESCRIPCIÓN DETALLADA -->
+        <section class="mt-20 border-t border-stone-200 pt-12">
+            <h2 class="text-2xl font-serif mb-6">Detalles y Materiales</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-stone-600 text-sm leading-relaxed">
+                <div>
+                    <h3 class="font-semibold text-stone-800 mb-2">Composición y Materiales</h3>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Exterior: 100% algodón gabardina de alta densidad.</li>
+                        <li>Forro interior: Satén de poliéster transpirable.</li>
+                        <li>Botones de cuerno natural grabados a láser.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-stone-800 mb-2">Uso Recomendado y Cuidado</h3>
+                    <p>Ideal para climas templados y días lluviosos de otoño. Se recomienda limpieza en seco especializada para preservar la impermeabilidad y textura del tejido.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-900 text-stone-400 py-12 border-t border-stone-800 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white font-serif text-lg mb-4">Categorías</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Calzado</a></li>
+                    <li><a href="#" class="hover:text-white transition">Camisas</a></li>
+                    <li><a href="#" class="hover:text-white transition">Pantalones</a></li>
+                    <li><a href="#" class="hover:text-white transition">Accesorios</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-serif text-lg mb-4">Legal & Marca</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Términos y Condiciones</a></li>
+                    <li><a href="#" class="hover:text-white transition">Política de Privacidad</a></li>
+                    <li><a href="#" class="hover:text-white transition">Sobre la Marca</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-serif text-lg mb-4">Contacto</h3>
+                <p class="text-sm mb-2">Avenue des Champs-Élysées, París</p>
+                <p class="text-sm">contacto@maison-paris.com</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-stone-800 text-xs text-center">
+            &copy; 2026 MAISON. Todos los derechos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>
